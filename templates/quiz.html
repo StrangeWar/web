@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/95cdbd4cff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/quiz.css">
+    <title>Quizs</title>
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <div class="logo">
+                <img src="/static/images/sync-logo-zip-file/png/logo-no-background.png" alt="">
+            </div>
+            <ul>
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Career Assessment</a></li>
+                        <li><a href="#">Resume Writing</a></li>
+                        <li><a href="#">Interview Coaching</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">AI Counsling</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="log">
+                <button class="button"><a href="{{url_for('login')}}">Login</a></button>
+                <button class="button" ><a href="{{url_for('signup_page')}}">Signup</a></button>
+            </div>
+        </nav>
+    
+   <div class="quiz-box">
+       <div class="flex heading">
+        <h1>QUIZ</h1>
+        <i class="fa-solid fa-arrow-left-long pre" style="color: #ffffff;"></i>
+       </div>
+        <div class="quiz">
+            <h2 class="question">0000</h2>
+            <div class="ans">
+                <button class="butn">1</button>
+                <button class="butn">2</button>
+                <button class="butn">3</button>
+                <button class="butn">4</button>
+            </div>
+        </div>
+        <button class="next">Next</button>
+   </div>
+</div>
+
+   <script src="/static/script/quiz.js"></script>
+</body>
+</html>

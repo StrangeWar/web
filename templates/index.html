@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="/static/images/sync-logo-zip-file/png/logo-no-background.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Career Assessment</a></li>
+                        <li><a href="#">Resume Writing</a></li>
+                        <li><a href="#">Interview Coaching</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">AI Counselling</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="log">
+                <button class="button"><a href="{{ url_for('login') }}">Login</a></button>
+                <button class="button" ><a href="{{ url_for('signup_page') }}">Signup</a></button>
+            </div>
+        </nav>
+
+        <div class="mid" >
+
+            <div class="text">
+                <h1>Welcome to <span style="color: rgb(101, 101, 250);">SYNC</span> <br>A <span style="color: rgb(101, 101, 250);">Career</span> Counseling Website</h1>
+            <p>Welcome to Career Counseling - Your Partner in Achieving Your Career Goals. Our mission is to help you navigate the path to success by providing personalized career guidance and valuable resources. Whether you're a recent graduate exploring career options or a seasoned professional looking for a change, we are here to assist you every step of the way.</p>
+            <button class="button" ><a href="{{url_for('quiz')}}" >Take Your Test</a></button>
+        </div>
+        <img src="/static/images/Img/2978422-removebg.png" alt="">
+    </div>
+
+
+    </div>
+</body>
+</html>
